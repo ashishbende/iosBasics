@@ -12,6 +12,7 @@
 		3FD3A24B1CF010E1007F0088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3A2491CF010E1007F0088 /* Main.storyboard */; };
 		3FD3A24D1CF010E1007F0088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3A24C1CF010E1007F0088 /* Assets.xcassets */; };
 		3FD3A2501CF010E1007F0088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FD3A24E1CF010E1007F0088 /* LaunchScreen.storyboard */; };
+		3FD3A2581CF01181007F0088 /* restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD3A2571CF01181007F0088 /* restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3FD3A24C1CF010E1007F0088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FD3A24F1CF010E1007F0088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FD3A2511CF010E1007F0088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD3A2571CF01181007F0088 /* restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		3FD3A2441CF010E1007F0088 /* YelpAppStore */ = {
 			isa = PBXGroup;
 			children = (
+				3FD3A2571CF01181007F0088 /* restaurant.swift */,
 				3FD3A2451CF010E1007F0088 /* AppDelegate.swift */,
 				3FD3A2471CF010E1007F0088 /* ViewController.swift */,
 				3FD3A2491CF010E1007F0088 /* Main.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD3A2581CF01181007F0088 /* restaurant.swift in Sources */,
 				3FD3A2481CF010E1007F0088 /* ViewController.swift in Sources */,
 				3FD3A2461CF010E1007F0088 /* AppDelegate.swift in Sources */,
 			);
