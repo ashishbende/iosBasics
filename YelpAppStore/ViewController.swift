@@ -26,6 +26,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func removeRecord(sender: UIButton) {
+        
+        //restros.removeAtIndex(3)
+        restros.removeAll()
+        restros = (NSKeyedUnarchiver.unarchiveObjectWithFile(restaurant.ArchiveURL.path!) as? [restaurant])!
+        restros.removeFirst()
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(restros, toFile: restaurant.ArchiveURL.path!)
+        if !isSuccessfulSave {
+            print("Failed to save meals...")
+        }
+        
+        showResult.text = String(restros.count)
+
+    }
     @IBAction func saveData(sender: UIButton) {
         
         var res1 = restaurant(restaurantName: "dosa1 ",restaurantAddress: "san jose1", restaurantRating: 1)!
@@ -43,6 +57,7 @@ class ViewController: UIViewController {
         restros.append(res6)
         
         
+        
         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(restros, toFile: restaurant.ArchiveURL.path!)
         if !isSuccessfulSave {
             print("Failed to save meals...")
@@ -50,7 +65,7 @@ class ViewController: UIViewController {
 
     }
 
-    @IBAction func displayRecord(sender: AnyObject) {
+    @IBAction func displayRecord(sender: UIButton) {
        
         result = (NSKeyedUnarchiver.unarchiveObjectWithFile(restaurant.ArchiveURL.path!) as? [restaurant])!
         showResult.text = String(result.count)

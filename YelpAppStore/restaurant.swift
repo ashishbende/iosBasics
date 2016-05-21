@@ -55,6 +55,7 @@ class restaurant : NSObject, NSCoding{
         
         // Must call designated initializer.
         self.init(restaurantName : restaurantName, restaurantAddress: restaurantAddress!, restaurantRating :restaurantRating)
+        
     }
     
     

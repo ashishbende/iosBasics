@@ -40,6 +40,14 @@
                                     <action selector="displayRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UO8-JX-jRX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7E-oU-HSE">
+                                <rect key="frame" x="375" y="238" width="55" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Remove"/>
+                                <connections>
+                                    <action selector="removeRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Fh-sd-IVO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
