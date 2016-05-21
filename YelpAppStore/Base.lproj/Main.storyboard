@@ -18,9 +18,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoC-Gu-LHr">
-                                <rect key="frame" x="283" y="238" width="34" height="30"/>
+                                <rect key="frame" x="285" y="238" width="30" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Save"/>
+                                <state key="normal" title="❤️"/>
                                 <connections>
                                     <action selector="saveData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vGa-8J-6JU"/>
                                 </connections>
@@ -41,9 +41,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7E-oU-HSE">
-                                <rect key="frame" x="375" y="238" width="55" height="30"/>
+                                <rect key="frame" x="388" y="238" width="30" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Remove"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="♡">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="removeRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Fh-sd-IVO"/>
                                 </connections>

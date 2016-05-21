@@ -12,12 +12,13 @@ class ViewController: UIViewController {
 
      var restros = [restaurant]()
     var result = [restaurant]()
-
     
+
     @IBOutlet weak var showResult: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -66,7 +67,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func displayRecord(sender: UIButton) {
-       
+        
+        result.removeAll()
         result = (NSKeyedUnarchiver.unarchiveObjectWithFile(restaurant.ArchiveURL.path!) as? [restaurant])!
         showResult.text = String(result.count)
         }
